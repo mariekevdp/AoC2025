@@ -16,19 +16,16 @@ for instruction in instructions:
             zero_count += 1
     else:
         position = position - int(''.join(instruction[1:]))
-        
-        if position == 0:
-            zero_count += 1
 
         while position < 0:
             position = position + 100
             zero_count += 1
-            if position == 0:
-                zero_count += 1
 
+        if position == 0:
+            zero_count += 1
+            
         if start_position == 0:
              zero_count -= 1
-
             
             
 print(position)
