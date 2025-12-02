@@ -17,7 +17,7 @@ for product_ID in product_IDs:
         for i in range(string_length+1):
             divisor=i+1
 
-            if string_length % divisor == 0 and divisor <= string_length/2: #the string length must be divisible and will only ever be a max length of 1/2
+            if string_length % divisor == 0 and divisor <= string_length/2:
                 substring_array = []
                 no_of_substrings = int(string_length/divisor)
 

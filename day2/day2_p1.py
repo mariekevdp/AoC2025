@@ -4,7 +4,6 @@ product_IDs = f.read().split(',')
 invalid_IDs = []
 
 for product_ID in product_IDs:
-
     x = product_ID.find('-')
     firstID = int(''.join(product_ID[:x]))
     lastID = int(''.join(product_ID[x+1:]))
